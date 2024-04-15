@@ -61,12 +61,12 @@ You can install Postman via this website: https://www.postman.com/downloads/
 ## Mandatory Checklists (Subscriber)
 -   [✅] Clone https://gitlab.com/ichlaffterlalu/bambangshop-receiver to a new repository.
 -   **STAGE 1: Implement models and repositories**
-    -   [ ] Commit: `Create Notification model struct.`
-    -   [ ] Commit: `Create SubscriberRequest model struct.`
-    -   [ ] Commit: `Create Notification database and Notification repository struct skeleton.`
-    -   [ ] Commit: `Implement add function in Notification repository.`
-    -   [ ] Commit: `Implement list_all_as_string function in Notification repository.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
+    -   [✅] Commit: `Create Notification model struct.`
+    -   [✅] Commit: `Create SubscriberRequest model struct.`
+    -   [✅] Commit: `Create Notification database and Notification repository struct skeleton.`
+    -   [✅] Commit: `Implement add function in Notification repository.`
+    -   [✅] Commit: `Implement list_all_as_string function in Notification repository.`
+    -   [✅] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
     -   [ ] Commit: `Create Notification service struct skeleton.`
     -   [ ] Commit: `Implement subscribe function in Notification service.`
@@ -85,5 +85,8 @@ This is the place for you to write reflections:
 ### Mandatory (Subscriber) Reflections
 
 #### Reflection Subscriber-1
+1. RwLock atau Read Write Lock adalah struktur data yang dapat memfasilitasi pembacaan data oleh banyak thread secara bersamaan, tetapi akses mengubah data hanya diberikan untuk 1 thread dalam satu waktu. Di sisi lain, Mutex hanya memberikan akses kepada data untuk 1 thread dalam satu waktu, baik membaca maupun mengubah data. Pada kasus BambangShop, ada banyak thread yang perlu membaca dari NOTIFICATIONS di saat bersamaan. Maka dari itu, akan lebih optimal jika menggunakan RwLock.
+
+2. Rust merupakan bahasa pemrograman yang diciptakan untuk mengoptimasi concurrency. Static variable yang immutable merupakan salah satu upaya yang dilakukan oleh Rust untuk meningkatkan thread safety dalam multi threading. Misalnya, untuk menghindari skenario dimana ada thread yang sedang mengubah datanya, sedangkan ada thread lain yang membacanya. Hal ini dapat menciptakan race conditions yang tidak optimal untuk multi threading.
 
 #### Reflection Subscriber-2
