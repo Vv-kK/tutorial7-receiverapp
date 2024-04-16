@@ -68,16 +68,16 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [✅] Commit: `Implement list_all_as_string function in Notification repository.`
     -   [✅] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [✅] Commit: `Create Notification service struct skeleton.`
+    -   [✅] Commit: `Implement subscribe function in Notification service.`
+    -   [✅] Commit: `Implement subscribe function in Notification controller.`
+    -   [✅] Commit: `Implement unsubscribe function in Notification service.`
+    -   [✅] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [✅] Commit: `Implement receive_notification function in Notification service.`
+    -   [✅] Commit: `Implement receive function in Notification controller.`
+    -   [✅] Commit: `Implement list_messages function in Notification service.`
+    -   [✅] Commit: `Implement list function in Notification controller.`
+    -   [✅] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -90,3 +90,8 @@ This is the place for you to write reflections:
 2. Rust merupakan bahasa pemrograman yang diciptakan untuk mengoptimasi concurrency. Static variable yang immutable merupakan salah satu upaya yang dilakukan oleh Rust untuk meningkatkan thread safety dalam multi threading. Misalnya, untuk menghindari skenario dimana ada thread yang sedang mengubah datanya, sedangkan ada thread lain yang membacanya. Hal ini dapat menciptakan race conditions yang tidak optimal untuk multi threading.
 
 #### Reflection Subscriber-2
+1. Berdasarkan hasil yang saya explore, lib.rs merupakan kode yang berisi konfigurasi dari website BambangShop. Disini dinyatakan hal-hal yang berhubungan dengan environment, seperti publisher root URL, instance root URL, instance name, melakukan load environment variable, dll. 
+
+2. Observer pattern mempermudah penambahan jenis observer baru karena desain programnya menjadi bersifat open close. Membuat lebih dari 1 instance main app tetap bisa dilakukan. Hal ini berarti subscriber harus didaftarkan di semua instance main app. 
+
+3. Ya, menurut saya menggunakan postman sangat membantu dalam memudahkan pekerjaan kita. Dari Postman kita dapat mengetahui apakah program yang kita buat sudah berjalan sesuai dengan yang diharapkan.
